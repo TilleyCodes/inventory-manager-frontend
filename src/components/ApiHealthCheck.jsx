@@ -10,7 +10,7 @@ export default function ApiHealthWidget(){
 			let response = await fetch("http://localhost:3000/health");
 			let data = await response.json();
 
-			console.log(data);
+			console.log("Data", data);
 
 			setHealthCheckResult(data);
 		}
